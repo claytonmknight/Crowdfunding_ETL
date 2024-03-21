@@ -5,7 +5,7 @@ Contributors: Marsha Cole and Clayton Knight
 For this Extract, Transform, and Load (ETL) project, we worked in groups (of two) to practice building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database.
 
 ## Activities for this project included:
-1. Import the required modules/libraries (Pandas< Naumpy, and Datetime)
+1. Import the required modules/libraries (Pandas, Naumpy, and Datetime)
 2. Read the data (excel) into a Pandas DataFrame
 3. Identify the different columns and data types
 4. Split the 'category & sub-category' column into category and subcategory columns
