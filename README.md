@@ -1,5 +1,5 @@
 
-<img width="245" alt="image" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/148498483/755282da-ee89-440e-b903-4dc13de8e7f9">
+<img width="1045" alt="image" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/148498483/755282da-ee89-440e-b903-4dc13de8e7f9">
 
 # Crowdfunding_ETL
 Project 2 - Group 4 
