@@ -1,25 +1,15 @@
+
+<img width="245" alt="image" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/148498483/755282da-ee89-440e-b903-4dc13de8e7f9">
+
 # Crowdfunding_ETL
 Project 2 - Group 4 
 Contributors: Marsha Cole and Clayton Knight
 
-For this Extract, Transform, and Load (ETL) project, we worked in groups (of two) to practice building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database.
+# Introduction
+In this Extract, Transform, Load (ETL) project, we built an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database.
 
-## Activities for this project included:
-1. Import the required modules/libraries (Pandas, Numpy, and Datetime)
-2. Read the data (excel) into a Pandas DataFrame
-3. Identify the different columns and data types
-4. Split the 'category & sub-category' column into category and subcategory columns
-
-### Resources and Libraries
-  * Jupyter Notebook
-  * QuicDBD
-  * PostgreSQL
-  * Pandas
-  * Datetime
-  * Numpy
-
-## Instructions
-The instructions for this project were divided into the following subsections:
+## Project Outline
+This project was divided into the following subsections:
 
   * Create the Category and Subcategory DataFrames
   * Create the Campaign DataFrame
