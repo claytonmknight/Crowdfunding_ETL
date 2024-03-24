@@ -1,141 +1,65 @@
+# Crowdfunding ETL
 
-<img width="1045" alt="image" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/148498483/755282da-ee89-440e-b903-4dc13de8e7f9">
+![Crowdfunding ETL](https://github.com/claytonmknight/Crowdfunding_ETL/assets/148498483/755282da-ee89-440e-b903-4dc13de8e7f9)
 
-# Crowdfunding_ETL
-Project 2 - Group 4 
-Contributors: Marsha Cole and Clayton Knight
+## Introduction
+Crowdfunding ETL is a project focusing on Extract, Transform, Load (ETL) processes using Python, Pandas, and various data manipulation techniques. The project aims to extract data from Excel files, transform it into structured formats, and load it into a PostgreSQL database. This README provides an overview of the project structure, objectives, and steps involved in the ETL process.
 
-# Introduction
-In this Extract, Transform, Load (ETL) project, we built an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database.
+## Contributors
+- Marsha Cole
+- Clayton Knight
+
+## Project Overview
+The project involves the following key components:
+
+1. **Data Extraction and Transformation**: Extracting data from Excel files (`crowdfunding.xlsx` and `contacts.xlsx`) and transforming it into structured CSV files.
+2. **Database Creation**: Designing and creating a PostgreSQL database schema based on the transformed data.
+3. **ETL Pipeline**: Developing Python scripts to execute the ETL process, including loading data into the database.
+4. **Documentation**: Providing detailed documentation, including project outline, file descriptions, and database schema.
 
 ## Files Included
-  * Crowdfunding_db_schema.sql
-  * ETL_Mini_Project_MCole_CKnight.ipynb
-  * QuickDBD-Crowdfunding ELT.png
-  * Screenshot Campaign.png
-  * Screenshot Category.png
-  * Screenshot Contacts.png
-  * Screenshot Subcategory.png
-  * Resources
-    * campaign.csv
-    * category.csv
-    * contacts.csv
-    * contacts.xlsx
-    * crowdfuning.xlsx
-    * subcategory.csv
+- **[Crowdfunding_db_schema.sql](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/Crowdfunding_db_schema.sql)**: PostgreSQL database schema script.
+- **[ETL_Mini_Project_MCole_CKnight.ipynb](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/ETL_Mini_Project_MCole_CKnight.ipynb)**: Jupyter Notebook containing Python code for data extraction, transformation, and loading.
+- **[QuickDBD-Crowdfunding ELT.png](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/QuickDBD-Crowdfunding%20ETL.png)**: Entity-Relationship Diagram (ERD) representing the database schema.
+- **Screenshots**: Screenshots of sample data and tables.
+- **[Resources](https://github.com/claytonmknight/Crowdfunding_ETL/tree/main/Resources)**: Folder containing source Excel files and generated CSV files.
 
 ## Project Outline
-This project was divided into the following subsections:
+The project is divided into the following subsections:
 
-  * Create the Category and Subcategory DataFrames
-  * Create the Campaign DataFrame
-  * Create the Contacts DataFrame
-  * Create the Crowdfunding Database
+1. **Create the Category and Subcategory DataFrames**: Extracting and transforming data from `crowdfunding.xlsx` to create category and subcategory CSV files.
+2. **Create the Campaign DataFrame**: Extracting and transforming data from `crowdfunding.xlsx` to create a campaign CSV file.
+3. **Create the Contacts DataFrame**: Extracting and transforming data from `contacts.xlsx` to create a contacts CSV file.
+4. **Create the Crowdfunding Database**: Designing the database schema, creating tables, and importing CSV data into the PostgreSQL database.
 
-# Create the Category and Subcategory DataFrames
-1. Extract and transform the `crowdfunding.xlsx` Excel data to create a category DataFrame that has the following columns:
+## Usage
+To execute the ETL process, follow these steps:
+1. Run the Jupyter Notebook `ETL_Mini_Project_MCole_CKnight.ipynb`.
+2. Ensure all dependencies are installed (`pandas`, `sqlalchemy`, etc.).
+3. Follow the instructions provided in the notebook to execute each step of the ETL process.
+4. Verify the database creation and data import by querying the PostgreSQL database.
 
-   * A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
-
-   * A "category" column that contains only the category titles
-
-2. Export the category DataFrame as `category.csv` and save it to your GitHub repository.
-
-3. Extract and transform the `crowdfunding.xlsx` Excel data to create a subcategory DataFrame that has the following columns:
-
-   * A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
-
-   * A "subcategory" column that contains only the subcategory titles
-
-4. Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
-
-
-# Create the Campaign DataFrame
-
-1. Extract and transform the `crowdfunding.xlsx` Excel data to create a campaign DataFrame has the following columns:
-
-   * The **"cf_id"** column
-   
-   * The **"contact_id"** column
-   
-   * The **"company_name"** column
-   
-   * The **"blurb"** column, renamed to ***"description"***
-   
-   * The **"goal"** column, converted to the float data type
-   
-   * The **"pledged"** column, converted to the float data type
-   
-   * The **"outcome"** column
-   
-   * The **"backers_count"** column
-   
-   * The **"country"** column
-   
-   * The **"currency"** column
-   
-   * The **"launched_at"** column, renamed to ***"launch_date"*** and with the UTC times converted to the datetime format
-   
-   * The **"deadline"** column, renamed to ***"end_date"*** and with the UTC times converted to the datetime format
-   
-   * The **"category_id"** column, with unique identification numbers matching those in the ***"category_id"*** column of the category DataFrame
-   
-   * The **"subcategory_id"** column, with the unique identification numbers matching those in the ***"subcategory_id"*** column of the subcategory DataFrame
-
-2. Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
-
-# Create the Contacts DataFrame
-
-1. Use Python dictionary methods.
-
-   * Import the `contacts.xlsx` file into a DataFrame.
-
-   * Iterate through the DataFrame, converting each row to a dictionary.
-
-   * Iterate through each dictionary, doing the following:
-
-      * Extract the dictionary values from the keys by using a Python list comprehension.
-
-      * Add the values for each row to a new list.
-
-      * Create a new DataFrame that contains the extracted data.
-
-      * Split each "name" column value into a first and last name, and place each in a new column.
-      
-      * Clean and export the DataFrame as `contacts.csv` and save it to your GitHub repository.
-
-# Create the Crowdfunding Database
-
-1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site.
+## Database Schema
+The database schema is represented in the ERD below:
 
 ![QuickDBD-Crowdfunding ETL](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/1eb5fe61-326e-463e-bbcd-3ff4f9425267)
 
-2. Use the information from the ERD to create a table schema for each CSV file.
+The schema is defined in the script `Crowdfunding_db_schema.sql`.
 
-3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`.
+## Screenshots
+Sample screenshots of the created database tables:
 
-4. Create a new Postgres database, named `crowdfunding_db`.
+- **Contacts Table**  
+  ![Screenshot Contacts](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/98573ab9-a1d3-4ce4-a931-7d3e45cc4682)
 
-5. Using the database schema, create the tables in the correct order to handle the foreign keys.
+- **Category Table**  
+  ![Screenshot Category](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d)
 
-6. Verify the table creation by running a SELECT statement for each table.
+- **Subcategory Table**  
+  ![Screenshot Subcategory](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f)
 
-7. Import each CSV file into its corresponding SQL table.
+- **Campaign Table**  
+  ![Screenshot Campaign](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e)
 
-8. Verify that each table has the correct data by running a **SELECT** statement for each.
-
-      * Contacts Table
-
-        <img width="466" alt="Screenshot Contacts" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/98573ab9-a1d3-4ce4-a931-7d3e45cc4682">
-
-      * Category Table
-        
-        <img width="260" alt="Screenshot Category" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d">
-
-      * Subcategory Table
-        
-        <img width="260" alt="Screenshot Subcategoy" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f">
-
-      * Campgain Table
-        
-        <img width="758" alt="Screenshot Campaign" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e">
+## Conclusion
+The Crowdfunding ETL project demonstrates the process of extracting, transforming, and loading data from Excel files into a PostgreSQL database. The provided scripts and documentation serve as a guide for understanding and replicating the ETL process for similar datasets.
