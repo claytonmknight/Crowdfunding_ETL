@@ -21,7 +21,7 @@ The project involves the following key components:
 - **[Crowdfunding_db_schema.sql](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/Crowdfunding_db_schema.sql)**: PostgreSQL database schema script.
 - **[ETL_Mini_Project_MCole_CKnight.ipynb](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/ETL_Mini_Project_MCole_CKnight.ipynb)**: Jupyter Notebook containing Python code for data extraction, transformation, and loading.
 - **[QuickDBD-Crowdfunding ELT.png](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/QuickDBD-Crowdfunding%20ETL.png)**: Entity-Relationship Diagram (ERD) representing the database schema.
-- **Screenshots**: Screenshots of sample data and tables.
+- **[Screenshots](https://github.com/claytonmknight/Crowdfunding_ETL/tree/main/Screenshots)**: Screenshots of sample data and tables.
 - **[Resources](https://github.com/claytonmknight/Crowdfunding_ETL/tree/main/Resources)**: Folder containing source Excel files and generated CSV files.
 
 ## Project Outline
