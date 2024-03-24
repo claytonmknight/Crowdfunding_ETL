@@ -15,11 +15,11 @@ The project involves the following key components:
 1. **Data Extraction and Transformation**: Extracting data from Excel files (`crowdfunding.xlsx` and `contacts.xlsx`) and transforming it into structured CSV files.
 2. **Database Creation**: Designing and creating a PostgreSQL database schema based on the transformed data.
 3. **ETL Pipeline**: Developing Python scripts to execute the ETL process, including loading data into the database.
-4. **Documentation**: Providing detailed documentation including project outline, file descriptions, and database schema.
+4. **Documentation**: Providing detailed documentation, including project outline, file descriptions, and database schema.
 
 ## Files Included
 - **Crowdfunding_db_schema.sql**: PostgreSQL database schema script.
-- **ETL_Mini_Project_MCole_CKnight.ipynb**: Jupyter Notebook containing Python code for data extraction, transformation, and loading.
+- **[ETL_Mini_Project_MCole_CKnight.ipynb](https://github.com/claytonmknight/Crowdfunding_ETL/blob/main/ETL_Mini_Project_MCole_CKnight.ipynb)**: Jupyter Notebook containing Python code for data extraction, transformation, and loading.
 - **QuickDBD-Crowdfunding ELT.png**: Entity-Relationship Diagram (ERD) representing the database schema.
 - **Screenshots**: Screenshots of sample data and tables.
 - **Resources**: Folder containing source Excel files and generated CSV files.
