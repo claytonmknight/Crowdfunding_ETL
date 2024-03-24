@@ -49,17 +49,21 @@ The schema is defined in the script `Crowdfunding_db_schema.sql`.
 ## Screenshots
 Sample screenshots of the created database tables:
 
-- **Contacts Table**  
-  ![Screenshot Contacts](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/98573ab9-a1d3-4ce4-a931-7d3e45cc4682)
+- **Contacts Table**
+  
+    ![Screenshot Contacts](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/98573ab9-a1d3-4ce4-a931-7d3e45cc4682)
 
-- **Category Table**  
-  ![Screenshot Category](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d)
+- **Category Table**
+  
+    ![Screenshot Category](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d)
 
-- **Subcategory Table**  
-  ![Screenshot Subcategory](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f)
+- **Subcategory Table**
+  
+    ![Screenshot Subcategory](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f)
 
-- **Campaign Table**  
-  ![Screenshot Campaign](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e)
+- **Campaign Table**
+  
+    ![Screenshot Campaign](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e)
 
 ## Conclusion
 The Crowdfunding ETL project demonstrates the process of extracting, transforming, and loading data from Excel files into a PostgreSQL database. The provided scripts and documentation serve as a guide for understanding and replicating the ETL process for similar datasets.
