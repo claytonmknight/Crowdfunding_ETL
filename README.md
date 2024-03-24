@@ -92,6 +92,8 @@ This project was divided into the following subsections:
 
 1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site.
 
+![QuickDBD-Crowdfunding ETL](https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/1eb5fe61-326e-463e-bbcd-3ff4f9425267)
+
 2. Use the information from the ERD to create a table schema for each CSV file.
 
 3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`.
@@ -104,4 +106,12 @@ This project was divided into the following subsections:
 
 7. Import each CSV file into its corresponding SQL table.
 
-8. Verify that each table has the correct data by running a **"SELECT"** statement for each.
+8. Verify that each table has the correct data by running a **SELECT** statement for each.
+
+<img width="466" alt="Screenshot Contacts" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c76bb488-87af-4ea9-9a9c-526b185d6f1c">
+
+<img width="260" alt="Screenshot Category" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d">
+
+<img width="245" alt="Screenshot Subcategoy" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f">
+
+<img width="758" alt="Screenshot Campaign" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e">
