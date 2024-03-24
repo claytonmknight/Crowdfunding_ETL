@@ -8,6 +8,22 @@ Contributors: Marsha Cole and Clayton Knight
 # Introduction
 In this Extract, Transform, Load (ETL) project, we built an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database.
 
+## Files Included
+  * Crowdfunding_db_schema.sql
+  * ETL_Mini_Project_MCole_CKnight.ipynb
+  * QuickDBD-Crowdfunding ELT.png
+  * Screenshot Campaign.png
+  * Screenshot Category.png
+  * Screenshot Contacts.png
+  * Screenshot Subcategory.png
+  * Resources
+    * campaign.csv
+    * category.csv
+    * contacts.csv
+    * contacts.xlsx
+    * crowdfuning.xlsx
+    * subcategory.csv
+
 ## Project Outline
 This project was divided into the following subsections:
 
@@ -108,10 +124,18 @@ This project was divided into the following subsections:
 
 8. Verify that each table has the correct data by running a **SELECT** statement for each.
 
-<img width="466" alt="Screenshot Contacts" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c76bb488-87af-4ea9-9a9c-526b185d6f1c">
+      * Contacts Table
 
-<img width="260" alt="Screenshot Category" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d">
+        <img width="466" alt="Screenshot Contacts" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/98573ab9-a1d3-4ce4-a931-7d3e45cc4682">
 
-<img width="245" alt="Screenshot Subcategoy" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f">
+      * Category Table
+        
+        <img width="260" alt="Screenshot Category" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/c8653ec5-bc93-4dab-aa3d-f90822cc412d">
 
-<img width="758" alt="Screenshot Campaign" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e">
+      * Subcategory Table
+        
+        <img width="260" alt="Screenshot Subcategoy" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/65d67b80-88f9-488e-990e-4d2fd8ff343f">
+
+      * Campgain Table
+        
+        <img width="758" alt="Screenshot Campaign" src="https://github.com/claytonmknight/Crowdfunding_ETL/assets/153461955/786551dd-f232-4c4a-82cd-ee2c66bd1d0e">
